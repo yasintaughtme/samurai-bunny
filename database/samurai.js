@@ -18,9 +18,9 @@ class SAMURAI {
   collide(disco) {
     // noFill();
     // stroke(255);
-    // rect(disco.x, disco.y, disco.w/1.5, disco.h/1.5);
+    // rect(disco.x + 5, disco.y, disco.w/2.5, disco.h/1.5);
 
-    return collideRectRect(this.pos.x, this.pos.y, this.w/1.5, this.h/1.25, disco.x, disco.y, disco.w/1.5, disco.h/1.5);
+    return collideRectRect(this.pos.x, this.pos.y, this.w/1.5, this.h/1.25, disco.x + 5, disco.y, disco.w/2.5, disco.h/1.5);
   }
 
   motion() {
